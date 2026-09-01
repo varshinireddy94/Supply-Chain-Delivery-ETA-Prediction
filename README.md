@@ -50,6 +50,8 @@ multiple items or payments.
 That's a **~66% reduction in MAE** over the current rule-based delivery
 estimate. Full numbers are saved in `reports/training_report.json`.
 
+<img width="1397" height="751" alt="image" src="https://github.com/user-attachments/assets/9ec07bf6-5832-4c4b-b2b6-7e37e6fa4bf0" />
+
 **Top SHAP drivers** (`reports/figures/shap_summary.png`, `reports/shap_feature_importance.json`):
 seller-customer distance and freight value dominate, followed by customer
 latitude/longitude and purchase/approval month — consistent with the
