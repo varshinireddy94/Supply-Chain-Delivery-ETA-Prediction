@@ -1,0 +1,71 @@
+{
+  "n_train": 77853,
+  "n_oot": 18603,
+  "features": [
+    "distance_customer_seller_min",
+    "product_height_cm_min",
+    "distance_customer_seller_q25",
+    "freight_value_min",
+    "customer_lat",
+    "order_approved_at_second",
+    "customer_lng",
+    "order_purchase_timestamp_month",
+    "product_length_cm_min",
+    "product_weight_g_min",
+    "payment_value_q75",
+    "payment_value_max",
+    "payment_value_mean",
+    "order_approved_at_month"
+  ],
+  "baseline_oot": {
+    "r2": -6.096547120243495,
+    "rmse": 15.469371569468713,
+    "mae": 12.755738321776057
+  },
+  "benchmark_cv": {
+    "xgboost": {
+      "cv_r2_mean": 0.2643729024505078,
+      "cv_r2_std": 0.011865054974083047,
+      "cv_rmse_mean": 8.56355572794721,
+      "cv_rmse_std": 0.21971672593150357,
+      "cv_mae_mean": 5.276118095634121,
+      "cv_mae_std": 0.04162407996261916,
+      "fit_seconds": 2.0
+    },
+    "lightgbm": {
+      "cv_r2_mean": 0.28840826589893226,
+      "cv_r2_std": 0.012773375908871114,
+      "cv_rmse_mean": 8.422582683969901,
+      "cv_rmse_std": 0.22452762888660674,
+      "cv_mae_mean": 5.207285459083007,
+      "cv_mae_std": 0.04207774330187788,
+      "fit_seconds": 1.9
+    },
+    "catboost": {
+      "cv_r2_mean": 0.2871327573596992,
+      "cv_r2_std": 0.01202300026603351,
+      "cv_rmse_mean": 8.430116709793106,
+      "cv_rmse_std": 0.22115940250078128,
+      "cv_mae_mean": 5.182849353039007,
+      "cv_mae_std": 0.03868779834130232,
+      "fit_seconds": 21.9
+    }
+  },
+  "optuna_best_params": {
+    "n_estimators": 495,
+    "learning_rate": 0.015035081735792844,
+    "num_leaves": 99,
+    "subsample": 0.6516850221532258,
+    "colsample_bytree": 0.6827606536041768,
+    "min_data_in_leaf": 82,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbose": -1
+  },
+  "optuna_best_cv_mae": 5.1558445219116,
+  "final_oot": {
+    "r2": 0.02441021858311021,
+    "rmse": 5.735651389007261,
+    "mae": 4.338557716552941
+  }
+}

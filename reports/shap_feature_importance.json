@@ -1,0 +1,16 @@
+{
+  "distance_customer_seller_min": 1.5076,
+  "freight_value_min": 1.1514,
+  "order_purchase_timestamp_month": 0.9317,
+  "customer_lat": 0.8906,
+  "order_approved_at_month": 0.864,
+  "customer_lng": 0.6828,
+  "distance_customer_seller_q25": 0.5076,
+  "product_height_cm_min": 0.1518,
+  "product_weight_g_min": 0.1463,
+  "product_length_cm_min": 0.1459,
+  "order_approved_at_second": 0.0923,
+  "payment_value_max": 0.0596,
+  "payment_value_q75": 0.0468,
+  "payment_value_mean": 0.0416
+}
