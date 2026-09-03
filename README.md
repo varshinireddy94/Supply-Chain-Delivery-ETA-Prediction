@@ -4,6 +4,8 @@ Predicts e-commerce delivery time (in days) from order, seller, product, payment
 and geospatial data, using a LightGBM model tuned with Optuna and explained with
 SHAP. Served via FastAPI and a Streamlit demo.
 
+https://supply-chain-delivery-eta-prediction.streamlit.app/
+
 <img width="1397" height="751" alt="image" src="https://github.com/user-attachments/assets/9ec07bf6-5832-4c4b-b2b6-7e37e6fa4bf0" />
 Built on the [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 (96K+ orders).
